@@ -6,7 +6,6 @@ from langchain_core.prompts import PromptTemplate
 
 ollama_llm = OllamaAPI(temperature=0.2)
 
-# RetrievalQA zincirimizi oluşturuyoruz
 qa_chain = RetrievalQA.from_chain_type(
     llm=ollama_llm,
     return_source_documents=True,

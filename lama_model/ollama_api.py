@@ -2,7 +2,6 @@ from langchain.llms.base import LLM
 from typing import Optional, List
 import requests
 import json
-from langdetect import detect
 
 from .config import settings
 

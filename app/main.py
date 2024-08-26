@@ -18,16 +18,13 @@ async def handle_query(request: QueryRequest) -> Dict[str, str]:
         start_time = time.time()
         
         query = request.query
-        language = detect(query)  # Sorgunun dilini algılıyoruz
+        language = detect(query)  
 
-        # Prompt'u dinamik olarak oluşturuyoruz
        
         
-        # Yanıtı almak için QA zincirini kullanıyoruz
         response = qa_chain.invoke({"query": query})
         result = response.get("result", "No result found")
         
-        # Yanıtı kullanıcının diline çeviriyoruz
         try:
             translated_result = GoogleTranslator(source='en', target=language).translate(result)
         except Exception as translation_error:
