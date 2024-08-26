@@ -49,3 +49,4 @@ class OllamaAPI(LLM):
     @property
     def _llm_type(self) -> str:
         return "ollama_api"
+    
