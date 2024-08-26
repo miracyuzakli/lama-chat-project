@@ -9,8 +9,6 @@ This project is designed to process user queries in multiple languages, detect t
 - [Folder Structure](#folder-structure)
 - [Files and Their Functions](#files-and-their-functions)
 - [Environment Variables](#environment-variables)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Structure
 
